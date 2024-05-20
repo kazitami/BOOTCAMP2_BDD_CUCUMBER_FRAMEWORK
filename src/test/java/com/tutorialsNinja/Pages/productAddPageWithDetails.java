@@ -37,9 +37,4 @@ public class productAddPageWithDetails {
 		uploadButton.sendKeys(System.getProperty("user.dir")+"\\Pictures\\Screenshots\\Screenshot 2024-03-08 010016.png");
 	}
 	
-	public void ClickOndatePickerCalendar() {
-		Select select = new Select(datePickerCalendar);
-		select.selectByVisibleText("2024-06-20");
-	}
-
 }

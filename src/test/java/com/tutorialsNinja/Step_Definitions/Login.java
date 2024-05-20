@@ -1,9 +1,8 @@
 package com.tutorialsNinja.Step_Definitions;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 
-import com.tutorialsNinja.Listeners.MyListeners;
 import com.tutorialsNinja.Pages.AccountPage;
 import com.tutorialsNinja.Pages.HomePage;
 import com.tutorialsNinja.Pages.LoginPage;
@@ -16,9 +15,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Login {
-   
+    public WebDriver driver;
 
-	public WebDriver driver;
     @Given("User navigates to login page")
     public void user_navigates_to_login_page() {
         driver = DriverFactory_Code.getDriver();
@@ -29,41 +27,37 @@ public class Login {
        
     }
 
-    @When("^User enters valid email (.+)$")
-    public void user_enters_valid_email(String emailText) {
+    @When("^User enters valid email to login(.+)$")
+    public void user_enters_valid_email_to_login(String emailText) {
     	LoginPage loginpage = new LoginPage(driver);
     	loginpage.enterEmail(emailText);
     }
 
-    @And("^User enters valid password (.+)$")
-    public void user_enters_valid_password(String passwordText) {
+    @And("^User enters valid password to login(.+)$")
+    public void User_enters_valid_password_to_login(String passwordText) {
     	LoginPage loginpage = new LoginPage(driver);
     	loginpage.enterPassword(passwordText);
     }
 
-    @When("User enters invalid email")
-    public void user_enters_invalid_email(){
+    @When("User enters invalid email to login")
+    public void user_enters_invalid_email_to_login(){
     	LoginPage loginpage = new LoginPage(driver);
     	loginpage.enterEmail(Util.emailWithDateTimeStamp());
-        //driver.findElement(By.id("input-email")).sendKeys(Util.emailWithDateTimeStamp());
     }
 
     @Then("User gets warning message about credentials mismatch")
     public void user_gets_warning_message_about_credentials_mismatch(){
     	
     	LoginPage loginpage = new LoginPage(driver);
-    // String actualWarningMessage = driver.findElement(By.xpath("//div[contains(@class, 'alert-dismissible')]")).getText();
-    // String expectedWarningMessage = "Warning: No match for E-Mail Address and/or Password.";
         Assert.assertTrue(loginpage.retrieveWarningMessageText().contains("Warning: No match for E-Mail Address and/or Password."));
       
     }
 
-    @And("User enters invalid password {string}")
+    @And("User enters invalid password to login{string}")
     public void user_enters_invalid_password(String invalidPasswordText){
     	LoginPage loginpage = new LoginPage(driver);
     	loginpage.enterPassword(invalidPasswordText);
-        //driver.findElement(By.id("input-password")).sendKeys(invalidPasswordText);
-    }
+        }
 
 
     @And("User clicks on Login button")
@@ -71,14 +65,13 @@ public class Login {
     	LoginPage loginpage = new LoginPage(driver);
     	AccountPage accountpage = new AccountPage(driver);
     	accountpage = loginpage.clickOnLoginButton();
-        //driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
     }
 
     @Then("User is redirected to Account Page")
     public void user_is_redirected_to_account_page() {
     	AccountPage accountpage = new AccountPage(driver);
     	Assert.assertTrue(accountpage.validateDisplayStatusOfLogoutLink());
-        //Assert.assertTrue(driver.findElement(By.linkText("Logout")).isDisplayed());
+    	accountpage.clickOnLogoutLink();
     }
 
 

@@ -5,13 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+
 public class AccountPage {
 	
 	public WebDriver driver;
 	
 	
 	@FindBy(linkText = "Logout")
-	private WebElement logoutLink;
+	private WebElement AccountPagelogoutLink;
 	
 	
 	public AccountPage(WebDriver driver) {
@@ -20,8 +21,14 @@ public class AccountPage {
 	}
 	
 	public boolean validateDisplayStatusOfLogoutLink() {
-		boolean displayStatus = logoutLink.isDisplayed();
+		boolean displayStatus = AccountPagelogoutLink.isDisplayed();
 		return displayStatus;
 	}
+	
+	public void clickOnLogoutLink() {
+		AccountPagelogoutLink.click();
+	}
+
+	
 
 }
