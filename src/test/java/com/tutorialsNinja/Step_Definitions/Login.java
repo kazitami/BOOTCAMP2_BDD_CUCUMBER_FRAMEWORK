@@ -68,12 +68,10 @@ public class Login {
     }
 
     @Then("User is redirected to Account Page")
-    public void user_is_redirected_to_account_page() {
+    public void user_is_redirected_to_account_page(){
     	AccountPage accountpage = new AccountPage(driver);
     	Assert.assertTrue(accountpage.validateDisplayStatusOfLogoutLink());
     	accountpage.clickOnLogoutLink();
-    }
-
-
+        }
 }
 

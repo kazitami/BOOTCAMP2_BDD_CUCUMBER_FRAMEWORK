@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 		         features = "src/test/resources/feature_files",
                  glue = {"com.tutorialsNinja.Step_Definitions", "com.tutorialsNinja.Hooks"},
-                 tags = "@TutorialsNinjaLogin or @TutorialsNinjaRegistration or @TutorialsNinjaSearchProduct "
-                 		+ "or @TutorialsNinjaAddToCart",
+                 tags = "@TutorialsNinjaAddToCart or @TutorialsNinjaSearchProduct"
+                 		+ " or @TutorialsNinjaRegistration or @TutorialsNinjaLogin",
                   plugin = {"pretty", "html:target/site/cucumber-html", "json:target/cucumber1.json"}
                      
 		         )

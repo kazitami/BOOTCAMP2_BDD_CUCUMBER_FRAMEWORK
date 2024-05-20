@@ -37,13 +37,6 @@ public class HomePage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	public productAddPageWithDetails clickOnAddToCartButtonToNavigateProductPage() {
-		addToCartButton.click();
-		return new productAddPageWithDetails(driver); 
-			
-	}
-	
 
 	public void clickOnMyAccount() {
 		myAccountDropDown.click();
@@ -62,11 +55,10 @@ public class HomePage {
 
 
 	// Product page
-	public ProductSelectPage ClickOnLaptopNotebook() {
+	public AddToCart_ProductSelectPage ClickOnLaptopNotebook() {
 		MenuLaptopsNotebooks.click();
 		ShowAllLaptopsNotebooks.click();
-		ProductPage_button_cart.click();
-		return new ProductSelectPage(driver);
+		return new AddToCart_ProductSelectPage(driver);
 	}
 	
 }

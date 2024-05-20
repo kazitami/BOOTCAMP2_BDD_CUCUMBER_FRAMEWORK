@@ -43,4 +43,4 @@ Feature: Login Functionality of TutorialsNinja
     Given User navigates to login page
     And User clicks on Login button
     Then User gets warning message about credentials mismatch
-
+ 

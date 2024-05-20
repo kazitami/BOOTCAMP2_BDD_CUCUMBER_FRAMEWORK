@@ -38,7 +38,6 @@ public class LoginPage {
 	public AccountPage clickOnLoginButton() {
 		loginButton.click();
 		return new AccountPage(driver);
-	
 	}
 	
 	public String retrieveWarningMessageText() {
