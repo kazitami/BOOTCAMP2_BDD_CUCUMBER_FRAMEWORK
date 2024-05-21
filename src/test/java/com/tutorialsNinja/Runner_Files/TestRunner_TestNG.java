@@ -9,10 +9,13 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"com.tutorialsNinja.Step_Definitions", "com.tutorialsNinja.Hooks"},
         tags = "@TutorialsNinjaAddToCart or @TutorialsNinjaSearchProduct"
         		+ " or @TutorialsNinjaRegistration or @TutorialsNinjaLogin",
-         plugin = {"pretty", "html:target/site/cucumber-html", "json:target/cucumber1.json"}
+         plugin = {"pretty", "html:target/site/cucumber-html", "json:target/cucumber1.json",
+       		  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+         monochrome = true,
+         publish = true
             
         )
 
-public class Runner_TestNG extends AbstractTestNGCucumberTests{
+public class TestRunner_TestNG extends AbstractTestNGCucumberTests{
 
 }

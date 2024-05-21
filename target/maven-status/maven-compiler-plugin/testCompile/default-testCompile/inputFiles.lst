@@ -1,9 +1,10 @@
 C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Pages\AccountSuccessPage.java
+C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Runner_Files\TestRunner_TestNG.java
+C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Runner_Files\TestRunner_JUNIT.java
 C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Hooks\MyHooks.java
 C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Pages\AccountPage.java
 C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Pages\RegisterPage.java
 C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Pages\AddToCart_ProductSelectPage.java
-C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Runner_Files\Runner_TestNG.java
 C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Step_Definitions\Register.java
 C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Pages\AddToCart_ProductDetailsPage.java
 C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Step_Definitions\SearchProduct.java
@@ -13,5 +14,4 @@ C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\
 C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\driver_Factory\DriverFactory_Code.java
 C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Pages\ProductPage.java
 C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Listeners\MyListeners.java
-C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Runner_Files\Runner_JUNIT.java
 C:\Users\kazit\eclipse-workspace\BOOTCAMP2_BDD_CUCUMBER_FRAMEWORK\src\test\java\com\tutorialsNinja\Step_Definitions\Login.java
